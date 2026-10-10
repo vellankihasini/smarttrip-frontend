@@ -1,0 +1,158 @@
+
+.budget-page {
+  min-height: 80vh;
+  padding: 42px 24px 70px;
+  box-sizing: border-box;
+  background: #faf8f5;
+}
+
+.budget-container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.budget-page-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.budget-eyebrow {
+  color: #398263;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.budget-page-header h1 {
+  color: #24483d;
+  font-size: clamp(32px, 5vw, 44px);
+  margin: 10px 0;
+}
+
+.budget-page-header > p:last-child,
+.budget-message {
+  color: #68756f;
+  line-height: 1.7;
+}
+
+.budget-trip-selector,
+.budget-expense-section,
+.budget-empty {
+  box-sizing: border-box;
+  padding: 24px;
+  margin: 24px 0;
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+}
+
+.budget-trip-selector label,
+.budget-field label {
+  display: block;
+  margin-bottom: 8px;
+  color: #40574b;
+  font-weight: 600;
+}
+
+.budget-trip-selector select,
+.budget-field input,
+.budget-field select {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 44px;
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid #d6ded8;
+  border-radius: 9px;
+  font: inherit;
+}
+
+.budget-expense-section h2,
+.budget-empty h2 {
+  margin-top: 0;
+  color: #24483d;
+}
+
+.budget-expense-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.budget-field {
+  min-width: 0;
+}
+
+.budget-expense-form button {
+  min-height: 46px;
+  align-self: end;
+  padding: 12px 18px;
+  color: #fff;
+  background: #326b54;
+  border: none;
+  border-radius: 9px;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.budget-expense-form button:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.budget-error {
+  padding: 14px 16px;
+  margin: 18px 0;
+  color: #991b1b;
+  background: #fef2f2;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.budget-expense-list {
+  display: grid;
+  gap: 12px;
+}
+
+.budget-expense-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px;
+  background: #f7faf8;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+}
+
+.budget-expense-item > div {
+  min-width: 0;
+}
+
+.budget-expense-item p {
+  margin: 6px 0 0;
+  color: #68756f;
+  overflow-wrap: anywhere;
+}
+
+.budget-expense-item > strong {
+  color: #285b48;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .budget-page {
+    padding: 28px 14px 48px;
+  }
+
+  .budget-expense-form {
+    grid-template-columns: 1fr;
+  }
+
+  .budget-trip-selector,
+  .budget-expense-section {
+    padding: 18px;
+  }
+}

@@ -1,0 +1,86 @@
+
+.budget-summary {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 28px;
+  margin: 24px 0;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.budget-summary h2 {
+  margin-top: 0;
+  color: #24483d;
+  font-size: 26px;
+}
+
+.budget-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 24px 0;
+}
+
+.budget-card {
+  padding: 20px;
+  background: #f0f7f3;
+  border-radius: 14px;
+  overflow-wrap: anywhere;
+}
+
+.budget-card p {
+  margin: 0 0 12px;
+  color: #60746a;
+  font-size: 14px;
+}
+
+.budget-card h3 {
+  margin: 0;
+  color: #285b48;
+  font-size: 24px;
+}
+
+.budget-progress-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 24px 0 10px;
+  color: #40574b;
+}
+
+.budget-progress-track {
+  height: 12px;
+  overflow: hidden;
+  background: #e7eee9;
+  border-radius: 20px;
+}
+
+.budget-progress-fill {
+  height: 100%;
+  background: #398263;
+  border-radius: 20px;
+  transition: width 0.25s ease;
+}
+
+.budget-warning {
+  padding: 14px;
+  color: #991b1b;
+  background: #fef2f2;
+  border-radius: 10px;
+}
+
+@media (max-width: 600px) {
+  .budget-summary {
+    padding: 18px;
+  }
+
+  .budget-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .budget-card h3 {
+    font-size: 21px;
+  }
+}

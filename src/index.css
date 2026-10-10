@@ -1,109 +1,70 @@
 
-/* SmartTrip authentication pages */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
 
-.auth-page {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 32px 18px;
-  background:
-    linear-gradient(rgba(20, 35, 35, 0.30), rgba(20, 35, 35, 0.48)),
-    url("https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=1800&q=85")
-    center / cover no-repeat;
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #263b35;
+  background: #faf8f5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 16px;
 }
 
-.auth-card {
-  width: 100%;
-  max-width: 440px;
-  display: flex;
-  flex-direction: column;
-  gap: 13px;
-  padding: 36px;
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  border-radius: 24px;
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.20);
-}
-
-.auth-card h1 {
-  margin: 0;
-  color: #203b36;
-  font-size: 29px;
-}
-
-.auth-card > p {
-  margin: 0 0 8px;
-  color: #687772;
-  line-height: 1.6;
-}
-
-.auth-card label {
-  color: #304a43;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.auth-card input {
-  width: 100%;
+* {
   box-sizing: border-box;
-  padding: 13px 14px;
-  border: 1px solid #d8e1dc;
-  border-radius: 11px;
-  background: #fff;
+}
+
+html {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+body, button, input, select, textarea {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', Georgia, serif;
   color: #203b36;
-  font: inherit;
-  outline: none;
 }
 
-.auth-card input:focus {
-  border-color: #568d78;
-  box-shadow: 0 0 0 3px rgba(86, 141, 120, 0.13);
+a {
+  color: inherit;
 }
 
-.auth-card button {
-  margin-top: 8px;
-  padding: 14px;
-  border: 0;
-  border-radius: 11px;
-  background: #315f50;
-  color: white;
-  font-size: 15px;
-  font-weight: 700;
+button, input, select, textarea {
+  font-size: inherit;
+}
+
+button {
   cursor: pointer;
 }
 
-.auth-card button:disabled {
-  cursor: wait;
-  opacity: 0.7;
+img {
+  max-width: 100%;
 }
 
-.auth-card .auth-error {
-  padding: 10px 12px;
-  border-radius: 9px;
-  background: #fff0ef;
-  color: #a32929;
-  font-size: 14px;
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
-.auth-card .auth-switch {
-  margin: 8px 0 0;
-  text-align: center;
-  font-size: 14px;
+main {
+  width: 100%;
 }
 
-.auth-switch a {
-  color: #315f50;
-  font-weight: 700;
-  text-decoration: none;
-}
-
-@media (max-width: 480px) {
-  .auth-card {
-    padding: 26px 21px;
-  }
-
-  .auth-card h1 {
-    font-size: 25px;
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
   }
 }
